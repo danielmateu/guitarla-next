@@ -9,7 +9,7 @@ export const Footer = () => {
 
     return (
         <footer className={styles.footer}>
-            <div className={styles.contenedor}>
+            <div className={`contenedor ${styles.contenido}`}>
                 <nav className={styles.navegacion}>
                     <Link href='/' className={router.pathname === '/' ? styles.active : ''}>
                         Inicio
@@ -25,7 +25,7 @@ export const Footer = () => {
                     </Link>
                 </nav>
 
-                <p>Todos los derechos reservados {new Date().getFullYear()}</p>
+                <p className={styles.derechos}>Todos los derechos reservados {new Date().getFullYear()}</p>
             </div>
         </footer>
     )
