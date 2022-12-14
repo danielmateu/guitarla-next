@@ -11,7 +11,7 @@ export default function Home() {
       >
         <h1>Inicio</h1>
 
-        <Link href="/nosotros">Ir a nosotros</Link>
+        
       </Layout>
 
     </>

@@ -10,7 +10,7 @@ const Nosotros = () => {
         >
             <h1>Nosotros</h1>
 
-            <Link href="/">Vuelve a inicio</Link>
+            
         </Layout>
     )
 }
