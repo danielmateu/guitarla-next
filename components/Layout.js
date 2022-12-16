@@ -11,7 +11,7 @@ export const Layout = ({children, title = '', description = ''}) => {
                 <meta name="description" content={description}></meta>
             </Head>
             <Header/>
-            {children}
+                {children}
             <Footer/>
         </>
     )

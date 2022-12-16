@@ -12,7 +12,7 @@ const Nosotros = () => {
             description={'Blog de música, venta de guitarras y más'}
         >
             <main className="contenedor">
-                <h2 className="heading">Nosotros</h2>
+                <h1 className="heading animate__animated animate__fadeInLeft">Nosotros</h1>
 
                 <div className={styles.contenido}>
 
