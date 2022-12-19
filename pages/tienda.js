@@ -8,7 +8,7 @@ import 'animate.css';
 
 export default function Tienda({ guitarras }) {
 
-    console.log(guitarras)
+    // console.log(guitarras)
 
     return (
         <Layout

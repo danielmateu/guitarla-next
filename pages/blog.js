@@ -6,7 +6,7 @@ import 'animate.css';
 
 const Blog = ({ posts }) => {
 
-    console.log(posts)
+    // console.log(posts)
 
     return (
         <Layout
