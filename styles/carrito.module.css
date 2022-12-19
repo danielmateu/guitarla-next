@@ -69,12 +69,13 @@
 }
 
 .resumen{
-    background-color: #f9fafb;
+    background-color: #f9fafb98;
     border-radius: 16px;
     -webkit-border-radius: 16px;
     -moz-border-radius: 16px;
     -ms-border-radius: 16px;
     -o-border-radius: 16px;
     padding: 4rem;
-    
+    position: sticky;
+    top: 3rem
 }

@@ -5,7 +5,16 @@ import styles from '../styles/carrito.module.css'
 
 
 
-const carrito = ({ carrito, actualizarCantidad }) => {
+
+const Carrito = ({ carrito, actualizarCantidad }) => {
+
+    const [total, setTotal] = useState(0);
+
+    useEffect(() => {
+        const calculoTotal = carrito.reduce((total, producto) => total + (producto.cantidad * producto.precio), 0);
+        setTotal(calculoTotal);
+    }, [carrito])
+    
     return (
 
         <Layout title="Carrito de compras">
@@ -58,7 +67,7 @@ const carrito = ({ carrito, actualizarCantidad }) => {
 
                     <aside className={styles.resumen}>
                         <h3>Resumen del pedido</h3>
-                        <p>Total a pagar: </p>
+                        <p>Total a pagar: €{total}</p>
                     </aside>
                 </div>
             </main>
@@ -68,4 +77,4 @@ const carrito = ({ carrito, actualizarCantidad }) => {
     )
 }
 
-export default carrito
+export default Carrito
