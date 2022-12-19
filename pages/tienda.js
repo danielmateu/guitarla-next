@@ -16,13 +16,14 @@ export default function Tienda({ guitarras }) {
             description={'Tienda virtual, blog de música, venta de guitarras y más'}
         >
             <main className="contenedor">
-                <h1 className="heading animate__animated animate__fadeInRight">Nuestra Colección</h1>
+                <h1 className="heading animate__animated animate__fadeInDown">Nuestra Colección</h1>
 
-                <div className={styles.grid}>
+                <div className={`${styles.grid} animate__animated animate__fadeIn`} >
                     {guitarras?.map(guitarra => (
                         <Guitarra
                             key={guitarra.id}
                             guitarra={guitarra.attributes}
+                        
                         />
 
 

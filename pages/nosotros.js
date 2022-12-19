@@ -12,11 +12,11 @@ const Nosotros = () => {
             description={'Blog de música, venta de guitarras y más'}
         >
             <main className="contenedor">
-                <h1 className="heading animate__animated animate__fadeInLeft">Nosotros</h1>
+                <h1 className="heading animate__animated animate__fadeInUp">Nosotros</h1>
 
                 <div className={styles.contenido}>
 
-                    <Image src='/img/nosotros.jpg' width={1000} height={800} alt='Imagen sorbe nosotros' className="animate__animated animate__fadeIn" />
+                    <Image src='/img/nosotros.jpg' width={1000} height={800} alt='Imagen sobre nosotros' className="animate__animated animate__fadeInLeft" />
 
                     <div>
 
