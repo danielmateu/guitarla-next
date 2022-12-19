@@ -4,6 +4,7 @@ import { Guitarra } from "../components/Guitarra";
 import styles from '../styles/grid.module.css'
 import 'animate.css';
 import { Post } from "../components/Post";
+import { Curso } from "../components/Curso";
 
 
 export default function Home({ guitarras, posts, curso }) {
@@ -30,6 +31,10 @@ export default function Home({ guitarras, posts, curso }) {
             ))}
           </div>
         </main>
+
+        <Curso
+          curso={curso.attributes}
+        />
 
         <section>
           <h1 className="heading animate__animated animate__fadeInUp">Blog</h1>
