@@ -30,6 +30,10 @@ export const Header = () => {
                     <Link href='/blog' className={router.pathname === '/blog' ? styles.active : ''}>
                         Blog
                     </Link>
+
+                    <Link href='/carrito'  className={router.pathname === '/carrito' ? styles.active : ''}>
+                        <Image width={20} height={20} src='/img/carrito.png' alt='imagen carrito'/>
+                    </Link>
                 </nav>
             </div>
         </header>

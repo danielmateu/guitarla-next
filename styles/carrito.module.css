@@ -1,0 +1,29 @@
+
+
+.contenido{
+    display: grid;
+    align-items: flex-start;
+    gap: 2rem
+}
+
+@media (min-width: 768px){
+    .contenido{
+        grid-template-columns: 3fr 2fr;
+    }
+}
+
+.carrito {
+    padding: 2rem 0;
+
+}
+
+.resumen{
+    background-color: #f9fafb;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+    padding: 4rem;
+    
+}
