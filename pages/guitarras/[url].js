@@ -5,7 +5,7 @@ import { Layout } from "../../components/Layout";
 import styles from "../../styles/guitarras.module.css";
 
 
-const Producto = ({ guitarra }) => {
+const Producto = ({ guitarra, agregarCarrito, actualizarCantidad }) => {
 
     const [cantidad, setCantidad] = useState(0);
     const { nombre, descripcion, imagen, precio } = guitarra[0].attributes
@@ -31,6 +31,8 @@ const Producto = ({ guitarra }) => {
         // console.log(guitarraSeleccionada)
 
         //Pasando la info al context
+        agregarCarrito(guitarraSeleccionada);
+
     }
 
     return (
